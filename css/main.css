@@ -1,0 +1,788 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ======================================================================
+   Author's custom styles  ================================================================ */
+
+/* limited reset */
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, thd, tr {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   vertical-align: baseline;
+}
+/* html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, section, summary {
+   display: block;
+}
+
+/* GLOBAL STYLES ================================================ */ 
+html {
+  background-color: #fff3d4;
+}
+body {
+   width: 80%;
+   background-color: #fff3d4;
+   font: 'Open Sans' "helvetica", "arial", "sans-serif" 100%;
+   color: #214660;
+   font-weight: normal;
+   font-style: normal;
+}
+h1 {
+   font-family: "dosis", sans-serif;
+   text-transform: uppercase;
+   color: #f9f9f9;
+}
+h1 a {
+   text-transform: uppercase;   
+   text-decoration: none;
+   color: #f9f9f9;
+}
+h2 {
+   font-family: 'TimesNewRoman', serif;
+   font-weight: bolder;
+   color: #214660;
+   font-size: 180%;
+   line-height: 1.25em;
+   padding: 1.5em 0 .15em 0;
+}
+h3 {
+   font-family: 'TimesNewRoman', serif;
+   font-weight: bolder;
+   color: #214660;	
+   font-size: 140%;
+   line-height: 1.5em;
+}
+p {
+   font-family: 'helvetica', 'arial';
+   color: #214660;
+   letter-spacing: .03125em;
+   line-height: 1.5em;
+   padding: .75em 0 .75em 0;
+}
+a {
+   text-transform: none;
+   text-decoration: none;
+   color: #214660;
+}
+li, th, td {
+   list-style-type: none;
+   color: #214660;
+}
+.page-header {
+   background-color: #214660;
+   opacity: 1;
+   position: fixed;
+   top: 0em;
+   left: 0em;
+   width:100%;
+   z-index: 1000;
+}
+.nav-icon {
+   color: #f9f9f9;
+   cursor: pointer; 
+   margin: 0 1em 0 0;
+}
+.dropdown {
+   float: right;
+   text-align: right;
+   z-index: 1000;
+   position: relative;
+   display: inline-block;
+   }
+.dropdown-content {
+   display: none;
+   position: absolute;
+   right: 0;
+   background-color: #f9f9f9;
+   width: 10.25em;
+   box-shadow: 0 .5em 1em 0 rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a {
+   font-size: 100%;
+   color: #214660;
+   padding: .75em 1em;
+   text-decoration: none;
+   display: block;
+}
+.dropdown-content a:hover {
+   background-color:#f04e2c;
+   text-decoration: none;
+   color: #f9f9f9;
+}
+.dropdown:hover .dropdown-content {
+   display: block;
+   list-style-type: none;  
+}
+.dropdown:hover .nav-icon {
+   background-color: #f04e2c;
+}
+.banner img {
+   width: 100%;
+   margin: 4em 0 0 0;
+   border: .125em solid #214660;
+}
+/* SLIDE CAROUSEL */
+.slide-carousel img {
+   width: 100%;
+   margin: 4em auto 0 auto;
+   border: 1px solid #214660;
+}
+.mySlides {
+   display: none;
+}
+
+/* MAIN CONTENT */
+.section1 {
+   width: 65%;
+   padding: 0 3em 3em 0em;
+   float: left;  
+}
+.section2 {
+   width: 100%;
+   padding: 0 3em 3em 0em; 
+}
+.section3 {
+  width: 65%;
+  margin: 0 0 4em 0em;
+}
+/* ASIDE - HOMEPAGE */
+aside {
+  float: left;
+  display: block; 
+}
+/* HOMEPAGE ASIDE - CALENDAR LINK */
+.calendar {
+  margin: 2.25em 0 2.25em 0;
+}
+.aside-img {
+   border: 1px solid #214660;
+   width: 50%;
+}
+/* INDEX1.HTML - TABLE - DIRECTORY PAGE */
+.monthlycalendar {
+  width:100%;   
+}
+.directorycontactinfo {
+  width: 150%;
+  margin: 3em 0 1em 0;
+  padding: .5em .125em .5em .125em;
+}
+.directorycontactinfo tr td {
+  border: 1px solid #214660;
+  padding:.5em .0625em .5em .5em;  
+}
+.directorycontactinfo th {
+  line-height: .5em; 
+}
+.even {
+  background-color: #ebebeb;
+}
+.odd {
+	background-color: #ffffff;
+}
+.odd a {
+  color: #214660;
+}
+.odd a:hover {
+	color: #f04e2c;
+}
+.even a {
+  color: #214660;
+}
+.even a:hover {
+   color: #f04e2c;
+}
+.company-name {
+   font-family: "TimesNewRoman";
+   font-size: 150%;
+}
+/* MAP - DIRECTORY PAGE */
+.buildingmap img {
+   width: 100%;
+   height: auto;
+   border: 1px solid #214660;
+   margin: -2em 0 3em 0;
+}
+.directorycontactinfo th{
+   color: #214660;
+   line-height: 1em;
+   
+}
+.directoryaside {
+   margin: -5em 0 1.5em 0;
+}
+.directory-list {
+   width: 47%;
+   float: left;
+   padding: 1.5em 1em 1.5em 0
+}
+/* CLASSES-SERVICES PAGE */
+.class-des {
+  margin: 0 auto;
+}
+.classes-servicescontent p {
+   width: 98%;
+   margin: 1.5em 0 1em 0;
+}
+.classpict {
+   width: 46%;
+   float: left;
+   margin: .25em .9em .25em 0;   
+}
+.classpict p {
+   width: 100%;
+   margin: -1em 0 0em 0;
+}
+.classpict img {
+   width: 100%;
+   margin: .65em .9em .65em 0;
+   border: 1px solid #214600;
+}
+.rent-space-content img{
+   width: 95%;
+   padding: 1em 2em .5 0;
+   border: 1px solid #214660;
+}
+.directions {
+   width: 55%;
+   float: left;
+}
+.rent-space-content img {
+   margin: 2em 0 .125em 0;  
+}
+.spacerentalinquiry {
+   margin: 4em auto 0 auto;
+}
+.spacerentalaside {
+   margin: -.75em 0 1em 0;
+   padding: 0 .5em 2em 0;
+}
+.directoryaside-cu {
+   margin: 0 2em 0 0;
+}
+.class-image {
+   float: left;
+   margin: 3em 0 .5em 0;
+   width: 110%;
+}
+
+
+/* FOOTER */
+footer {
+   text-align: center;
+   border-top: 1px solid #214660;
+   clear: both;
+   height: 9em;
+   padding: 0em 0 2em 0em;
+}
+footer li {
+   clear: both;
+   display: inline-block;
+   font-size: 80%;
+}
+footer img {
+   clear: both;  
+   width: 3em;
+   margin: .75em 0 0 .75em;
+   display: inline-block;   
+}   
+footer p {
+   clear: both;
+   text-align: center;
+   font-size: 80%;
+}
+.sitemap li a {
+   color: #214660;
+}
+
+/* HOMEPAGE ASIDE - CALENDAR LINK */
+.calendar {
+  margin: 2.25em 0 2.25em 0;
+}
+.calendar img {
+  width: 16em;
+  height: 15em;
+  background-color: #707070;
+}
+/* CALENDAR PAGE */
+.calendarpage {
+	margin: 3em 0 0 0;
+}
+.monthlycalendar tr td {
+  border: 1px solid #214660;
+  padding:.5em .5em 5em .5em;
+}
+th {
+	padding: 0 0 .5em 0;
+}
+
+
+
+  /*======================================================================
+SMALL custom styles  ================================================================ */   
+@media only screen and (max-width: 480px) {
+  
+  html {
+  	opacity: 0.96;
+    height: auto;
+   }  
+   body {
+     width: 90%;
+     margin: 0 auto;
+     min-width: 320px;
+     max-width: 480px;
+   }
+
+   /* navigation */
+   h1 {
+      padding: .9em 1em .9em 0;
+      font-size: 125%;
+      letter-spacing: .075em;
+   }
+   h1 a {
+      padding: .5em 1em .5em 0;
+   }
+   .nav-icon {; 
+   margin: 0 -.25em 0 0 ;
+}
+   .page-header {
+      height: 65px;   
+   }
+   .dropdown {
+      margin: -3em 1.5em 0 0;
+   }
+  .section1 {
+   width: 100%;
+   padding: 0 0em 3em 0em;     
+   margin: 0em 0em 0 0em;     
+   }
+   .aside {
+      border: 1px solid pink;
+      width: 100%;
+      padding: 0em 0em 2em 0em;
+   }
+   .calendarpage {
+      display: none;
+   }
+   .calendarpage-sm {
+     margin: -3.5em 0 3em 0;
+   } 
+   .directory-lg {
+      display: none;
+   }
+   .directory-sm {
+      width: 100%;
+      float: none;
+   }
+   .buildingmap img {
+      margin:1.5em 0 3em 0;
+   }
+   .classpict {
+      width: 100%;
+      margin: .625em .5em .625em 0;
+      float: left;
+   }   
+   .rent-space-content img {
+      width: 100%;
+   } 
+   .spacerentalaside {
+      margin: -4em 0 3em 0;
+   }
+   .directoryaside-cu {
+      margin: -3.5em 0 0 0;
+   }
+   footer img {
+      margin: .4em 0 0 .4em;
+   }
+    
+   
+   
+}
+ /*======================================================================
+MEDIUM custom styles  ================================================================ */   
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+html {
+  margin: 0 auto;
+  	opacity: 0.96;
+    height: auto;
+   }
+.mainwrapper {
+		background-color: #fff3d4;
+		opacity: 0.96;
+    padding: 0em 2.5em .5em 2.5em;
+}  
+   body {
+      width: 90%;
+      margin: 0 auto;
+      min-width: 481px;
+      max-width: 768px;
+   }
+/* navigation */  
+   h1 {
+      padding: .65em 0 .55em 1.25em;
+      font-size: 165%;      
+      letter-spacing: .065em;      
+   }
+   h1 a {
+      padding: .65em 0 .55em 1.25em;
+   }
+   .page-header {
+      height: 70px;   
+   }
+   .dropdown {
+      font-size: 110%;
+      margin: -2.8em 1.65em 0 0;
+   }  
+   .section1 {
+      width: 100%;
+      padding: 0 0em 3em 0em;     
+      margin: 0em 0em 0 0em;     
+   }
+   aside {
+      width: 92.5%;
+   }
+   .calendarpage {
+      display: none;
+   }
+   .calendarpage-sm {
+     margin: -3.5em 0 3ems 0;
+   }   
+   .directory-lg {
+      display: none;
+   }
+   .classpict {
+      width: 100%;
+      margin: .625em .5em .625em 0;
+      float: left;
+   }   
+   .rent-space-content img {
+      width: 100%;
+   }
+   .spacerentalaside {
+      margin: -4em 0 3em 0;
+   }
+  .directoryaside-cu {
+      margin: -3em 0 2em 0;
+   } 
+ 
+}
+/*======================================================================
+LARGE custom styles  ================================================================ */   
+@media only screen and (min-width: 769px)  {
+html {
+  margin: 0 auto;
+  	opacity: 0.96;
+    height: auto;
+   }
+.mainwrapper {
+		background-color: #fff3d4;
+		opacity: 0.96;
+    padding: 0em 2.5em .5em 2.5em;
+}  
+   
+   
+   body {
+      width: 90%;
+      margin: 0 auto;
+      min-width: 769px;
+      max-width: 1280px;
+   }
+/* navigation */  
+   h1 {
+      padding: .75em 0 .125em 2.5em;
+      font-size: 165%;      
+      letter-spacing: .065em;      
+   }
+   h1 a {
+      padding: .65em 0 .125em 1.65em;
+   }
+   .page-header {
+      height: 70px;   
+   }
+   .dropdown {
+      font-size: 110%;
+      margin: -2.125em 3.75em 0 0;
+   }   
+   aside {
+      width: 25%;
+   } 
+   .slide-presentation-sm {
+      display: none;
+   }
+   .calendarpage-sm {
+      display: none;
+   }
+   .directory-list {
+      display: none;
+   } 
+   .buildingmap{
+      width: 60%;
+      float: left;
+      padding: 0 3em 0 0;
+   }  
+   .calendarpage-sm {
+      display: none;
+   }   
+   
+   
+}
+
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
